@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title>Login/Registration System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="registration-box">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <div class="input-div">
+          <label for="regName">Your Name</label>
+          <input type="text" id="regName" name="regName" placeholder="Name.." required />
+        </div>
+        <div class="input-div">
+          <label for="regEmail">Email Address</label>
+          <input type="email" id="regEmail" name="regEmail" placeholder="Email.." required />
+        </div>
+        <div class="input-div">
+          <label for="regPassword">Password</label>
+          <input type="password" id="regPassword" name="regPassword" placeholder="Password.." required />
+        </div>
+        <div class="input-div">
+          <label for="regDob">Date of Birth</label>
+          <input type="date" id="regDob" name="regDob" required />
+        </div>
+        <div class="input-div">
+          <input id="regTerms" type="checkbox" /> I agree to terms
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <div id="login-box">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="input-div">
+          <label for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" name="loginEmail" placeholder="Email.." required />
+        </div>
+        <div class="input-div">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" name="loginPassword" placeholder="Password.." required />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <div id="securedPage" style="display:none;">
+      <h2>Welcome to the Secured Page!</h2>
+      <button id="logout-btn">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
